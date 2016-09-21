@@ -41,6 +41,9 @@ macro(targets)
     "sensor_msgs")
   custom_executable(topics allocator_example)
 
+  custom_executable(topics intra_process)
+  custom_executable(topics extra_process_listener)
+
   # Examples of Request/Response with Services
   custom_executable(services add_two_ints_client)
   custom_executable(services add_two_ints_client_async)
